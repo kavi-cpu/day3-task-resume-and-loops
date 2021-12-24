@@ -1,0 +1,79 @@
+1.loops
+
+//all loops
+
+var obj =[
+    {person: "name1",age:"5",company:"GUVI"},
+    {person: "name2",age:"10",company:"GUVI pvt"},
+    {person: "name1",age:"15",company:"GUVI public"},
+];
+
+//for-loop
+for(i=0;i<3;i++)
+{
+    console.log(obj[i].person);
+}
+
+//for in
+for(var i in obj){
+    console.log(obj[i].age);
+}
+
+//for each
+obj.forEach(function(){
+    console.log(obj[0].company);
+})
+
+//for of loop
+for(let objects of obj)
+{
+    console.log(objects.person);
+}
+
+
+
+
+2.//json resume
+var resume={
+    Name:"kavi kumar",
+    Phone:"7904038250",
+    email:"kavikumarbe@gmail.com",
+    dob:"23/06/1998",
+    address:
+        {
+        town:"madurai",
+        state:"TN", 
+        contry:"INDIA",
+    },
+education:
+        {
+        class10:"keren School",
+        class10:"keren school",
+        collage:"PSNA  collage",
+    },
+skills:
+    {
+        typing: "fast",
+        football:"state",
+    },
+
+language:
+    {
+        name1:"english",
+        level1:"mid range",
+        name1 :"tamil",
+        level1:"mother tounge"
+ 
+    },
+area_of_intrest:
+    {
+        game:"football",
+        subject:"maths",
+    }
+
+};
+console.log(resume);
+console.log(resume.Name);
+console.log(resume.address.town);
+
+
